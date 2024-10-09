@@ -82,8 +82,8 @@ def main():
         temp_li = []  
 
         for d in range(90, 271, 90):
-            for i in range(3):
-                for j in range(3):
+            for j in range(3):
+                for i in range(3):
                     arr1 = [items[:] for items in arr]
                     rotate_li.append(rotator.rotate_degree(arr1, i, j, d))
                     
