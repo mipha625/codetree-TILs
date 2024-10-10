@@ -4,7 +4,10 @@ def c1(arr):
     m = arr.popleft()
     graph = [[] * n for _ in range(n)]
     for i in range(0, 3 * m, 3):
-        s, e, c = arr[i], arr[i+1], arr[i+2]
+        s = arr.popleft()
+        e = arr.popleft()
+        c = arr.popleft()
+        # s, e, c = arr[i], arr[i+1], arr[i+2]
         graph[s].append((e, c))
         if s != e:
             graph[e].append((s, c))
